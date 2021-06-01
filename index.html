@@ -28,12 +28,12 @@
 
 
         <script>
-            //var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+            var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
             
 
             var tradeDiv = document.getElementById('trades')
 
-            /*
+            
             binanceSocket.onmessage = function (event) {
                 console.log(event.data);
 
@@ -41,7 +41,7 @@
                 
                 tradeDiv.append(messageObject.p)
             }
-            */
+            
         </script>
         <script src="charts.js"></script>
     </body>
